@@ -35,6 +35,7 @@ namespace Clientes
             string telefono = textBox5.Text;
             string correo = textBox5.Text;
             string fecha_creacion = dateTimePicker1.Text;
+            MessageBox.Show("Bienvenido como les va ");
             //string address = textBox4.Text;
         }
     }

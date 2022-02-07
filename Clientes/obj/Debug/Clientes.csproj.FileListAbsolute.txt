@@ -1,0 +1,16 @@
+C:\Users\nicky\source\repos\Clientes\Clientes\bin\Debug\Clientes.exe.config
+C:\Users\nicky\source\repos\Clientes\Clientes\bin\Debug\Clientes.exe
+C:\Users\nicky\source\repos\Clientes\Clientes\bin\Debug\Clientes.pdb
+C:\Users\nicky\source\repos\Clientes\Clientes\bin\Debug\EntityFramework.dll
+C:\Users\nicky\source\repos\Clientes\Clientes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nicky\source\repos\Clientes\Clientes\bin\Debug\EntityFramework.xml
+C:\Users\nicky\source\repos\Clientes\Clientes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nicky\source\repos\Clientes\Clientes\obj\Debug\Clientes.csproj.AssemblyReference.cache
+C:\Users\nicky\source\repos\Clientes\Clientes\obj\Debug\Clientes.csproj.SuggestedBindingRedirects.cache
+C:\Users\nicky\source\repos\Clientes\Clientes\obj\Debug\Clientes.Form1.resources
+C:\Users\nicky\source\repos\Clientes\Clientes\obj\Debug\Clientes.Properties.Resources.resources
+C:\Users\nicky\source\repos\Clientes\Clientes\obj\Debug\Clientes.csproj.GenerateResource.cache
+C:\Users\nicky\source\repos\Clientes\Clientes\obj\Debug\Clientes.csproj.CoreCompileInputs.cache
+C:\Users\nicky\source\repos\Clientes\Clientes\obj\Debug\Clientes.csproj.CopyComplete
+C:\Users\nicky\source\repos\Clientes\Clientes\obj\Debug\Clientes.exe
+C:\Users\nicky\source\repos\Clientes\Clientes\obj\Debug\Clientes.pdb
