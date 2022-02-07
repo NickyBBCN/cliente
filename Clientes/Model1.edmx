@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CLIENTES_BModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'CLIENTES_B.dbo.CLIENTES' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="CLIENTES">
+          <Property Name="Nombre_Cliente" Type="varchar" MaxLength="30" />
+          <Property Name="Tipo_Documento" Type="varchar" MaxLength="10" />
+          <Property Name="Numero_Documento" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Dirección" Type="varchar" MaxLength="30" />
+          <Property Name="Teléfono" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Correo" Type="varchar" MaxLength="30" />
+          <Property Name="Fecha_Creación" Type="datetime" />
+        </EntityType>-->
+        <Function Name="SP_CREATE_CLIENTES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Nombre_Cliente" Type="varchar" Mode="In" />
+          <Parameter Name="Tipo_Documento" Type="varchar" Mode="In" />
+          <Parameter Name="Numero_Documento" Type="decimal" Mode="In" />
+          <Parameter Name="Dirección" Type="varchar" Mode="In" />
+          <Parameter Name="Teléfono" Type="decimal" Mode="In" />
+          <Parameter Name="Correo" Type="varchar" Mode="In" />
+          <Parameter Name="Fecha_Creación" Type="datetime" Mode="In" />
+        </Function>
+        <EntityContainer Name="CLIENTES_BModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CLIENTES_BModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CLIENTES_BEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="SP_CREATE_CLIENTES">
+            <Parameter Name="Nombre_Cliente" Mode="In" Type="String" />
+            <Parameter Name="Tipo_Documento" Mode="In" Type="String" />
+            <Parameter Name="Numero_Documento" Mode="In" Type="Decimal" />
+            <Parameter Name="Dirección" Mode="In" Type="String" />
+            <Parameter Name="Teléfono" Mode="In" Type="Decimal" />
+            <Parameter Name="Correo" Mode="In" Type="String" />
+            <Parameter Name="Fecha_Creación" Mode="In" Type="DateTime" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CLIENTES_BModelStoreContainer" CdmEntityContainer="CLIENTES_BEntities" >
+          <FunctionImportMapping FunctionImportName="SP_CREATE_CLIENTES" FunctionName="CLIENTES_BModel.Store.SP_CREATE_CLIENTES" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
